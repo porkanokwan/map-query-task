@@ -1,0 +1,16 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+th {
+  background-color: tomato;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: salmon;
+}

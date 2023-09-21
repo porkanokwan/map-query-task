@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>Subregion</th>
+    <th>State Name (Full)</th>
+    <th>State Name (Abbr.)</th>
+  </tr>
+  <tr
+    *ngFor="let row of valueArr"
+    (click)="onClickRow($event)"
+    [ngStyle]="{ backgroundColor: rowID === row.id ? '#fa8072' : '' }"
+  >
+    <td [id]="row.id">{{ row.subRegieon }}</td>
+    <td [id]="row.id">{{ row.stateName }}</td>
+    <td [id]="row.id">{{ row.stateAbbr }}</td>
+  </tr>
+</table>
