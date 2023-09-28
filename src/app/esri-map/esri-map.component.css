@@ -4,6 +4,18 @@
   display: inline-flex;
 }
 
+.container-table {
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.container-table::-webkit-scrollbar {
+  display: none;
+}
+
 :host {
   position: absolute;
   top: 0;

@@ -1,6 +1,6 @@
 <div class="container">
   <div #mapViewRef class="map-view"></div>
-  <div *ngIf="stateValue !== undefined">
+  <div *ngIf="stateValue !== undefined" class="container-table">
     <app-table-country
       [valueArr]="stateValue"
       (onClickStateName)="onAddPolygonGraphic($event)"
